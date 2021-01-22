@@ -1,0 +1,56 @@
+C:\Users\thece>docker run hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+
+C:\Users\thece>docker ps -a
+CONTAINER ID   IMAGE         COMMAND    CREATED         STATUS                     PORTS     NAMES
+1e95c6f60a5a   hello-world   "/hello"   5 seconds ago   Exited (0) 4 seconds ago             happy_mccarthy
+
+C:\Users\thece>docker rm happy_mccarthy
+happy_mccarthy
+
+C:\Users\thece>docker run -it ubuntu bash
+root@61a22254e64e:/# exit
+exit
+
+C:\Users\thece>docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS                      PORTS     NAMES
+61a22254e64e   ubuntu    "bash"    38 seconds ago   Exited (0) 32 seconds ago             focused_blackwell
+
+C:\Users\thece>docker rm focused_blackwell
+focused_blackwell
+
+C:\Users\thece>docker run -dt ubuntu bash
+234c8df69c39e0d26ceca603e2a0f9a416fa06a47bb022ee1329a52c58a2ded3
+
+C:\Users\thece>docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED         STATUS         PORTS     NAMES
+234c8df69c39   ubuntu    "bash"    4 seconds ago   Up 2 seconds             blissful_bohr
+
+C:\Users\thece>docker rm -f blissful_bohr
+blissful_bohr
+
+C:\Users\thece>docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+C:\Users\thece>

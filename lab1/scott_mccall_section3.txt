@@ -1,0 +1,18 @@
+C:\Users\thece\Downloads\CSCI3308_Lab1\DanielMcCall_015_Labs>git add .
+
+C:\Users\thece\Downloads\CSCI3308_Lab1\DanielMcCall_015_Labs>git commit -m "first commit"
+[main 055a445] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+C:\Users\thece\Downloads\CSCI3308_Lab1\DanielMcCall_015_Labs>git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 269 bytes | 269.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/CSCI-3308-CU-Boulder/DanielMcCall_015_Labs.git
+   58c8e5d..055a445  main -> main
+
+C:\Users\thece\Downloads\CSCI3308_Lab1\DanielMcCall_015_Labs>
