@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flickr API Search</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">  
+    <link href="../resources/css/my_style.css" rel="stylesheet">
+  
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+         <li class="nav-item">
+          <a class="nav-link" href="mypage.html">Home</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../signup-modal/login.html">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../FlickrAPI/index.html">FlickrAPI Gallery</a>
+              </li>
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+          <a href="https://github.com/damc8609">
+          <img src="../resources/img/github.jpg" alt="Github Account" height="30px">
+        </a>
+        </div>
+        </div>
+      </nav>
+
+    <div class="" style="background-color: #0f415c;">
+        <div class="container-fluid" style="padding: 2%; ">
+            <div class="row">
+              <div class="col-2"></div>
+              <div class="col-2">
+                <select class="custom-select" name="num_images_select" id="num_images_select">
+                  <option>Number of photos</option>
+                  <option value="30">30</option>
+                  <option value="50">50</option>
+                  <option value="70">70</option>
+                  
+               </select>
+              </div>
+              <div class="col-5">
+                <input class="form-control" type="text" id="search_text" name="search_text">
+              </div>
+              <div class="col-1">
+                <button class="btn btn-light" onclick="makeApiCall();"/>Submit</button>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <br><br>
+      <div id="images_placeholder" name="images_placeholder">
+
+      </div>
+
+
+    <footer>
+        <a href="https://www.linkedin.com/in/daniel-mccall-061458207">
+        <img src="../resources/img/linkedin.png" alt="Linkedin Profile" height="40px">
+        </a>
+      </footer>
+  
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      <script src="js/script.js"></script>
+    </body>
+  </html>
